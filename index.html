@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AetherForge Compute Ltd | Agrivoltaic Compute Facilities • Devon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root {
+            --primary: #166534;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+
+        .section-header {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.04em;
+        }
+
+        .nav-link {
+            transition: color 0.2s ease;
+        }
+        
+        .nav-link:hover {
+            color: #166534;
+        }
+
+        .benefit-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.55)), url('https://picsum.photos/id/1016/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .accent-green {
+            color: #166534;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-emerald-800 rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-xl tracking-tighter">AF</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-xl tracking-tight">AetherForge</span>
+                        <span class="text-emerald-700 text-sm font-medium">Compute</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#opportunity" class="nav-link text-slate-600 hover:text-slate-900">The Opportunity</a>
+                    <a href="#concept" class="nav-link text-slate-600 hover:text-slate-900">Our Concept</a>
+                    <a href="#why-devon" class="nav-link text-slate-600 hover:text-slate-900">Why Devon</a>
+                    <a href="#benefits" class="nav-link text-slate-600 hover:text-slate-900">Benefits</a>
+                    <a href="#pilot" class="nav-link text-slate-600 hover:text-slate-900">The Pilot</a>
+                </div>
+
+                <div class="flex items-center gap-x-4">
+                    <a href="#contact" 
+                       class="hidden md:inline-flex items-center px-5 py-2.5 text-sm font-semibold rounded-2xl border border-emerald-700 text-emerald-700 hover:bg-emerald-50 transition-colors">
+                        Contact Us
+                    </a>
+                    <a href="#contact" 
+                       class="inline-flex items-center px-5 py-2.5 bg-emerald-800 hover:bg-emerald-900 transition-colors text-white text-sm font-semibold rounded-2xl">
+                        Discuss Partnership
+                    </a>
+                    
+                    <!-- Mobile menu button -->
+                    <button class="md:hidden w-10 h-10 flex items-center justify-center text-slate-600" id="mobile-menu-btn">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<header class="relative h-[100dvh] min-h-[620px] flex items-center justify-center overflow-hidden text-white">
+    
+    <!-- Background Image -->
+    <div class="absolute inset-0 bg-cover bg-center" 
+         style="background-image: url('hero-image.jpg')">
+        <!-- Dark overlay for better text readability -->
+        <div class="absolute inset-0 bg-slate-900/55"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative max-w-screen-xl mx-auto px-6 text-center z-10">
+        <div class="max-w-4xl mx-auto">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-3xl mb-6 border border-white/20">
+                <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                <span class="text-sm font-medium tracking-wide">PILOT PROJECT • DEVON, UK</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-6xl lg:text-7xl leading-[1.05] font-semibold tracking-tighter mb-6">
+                Harvesting the Sun.<br>
+                Powering Compute.<br>
+                <span class="text-emerald-400">Respecting the Land.</span>
+            </h1>
+            
+            <p class="max-w-2xl mx-auto text-xl md:text-2xl text-white/90 mb-10">
+                Pilot agrivoltaic facilities combining solar energy and high-performance compute 
+                with continued agricultural use in rural Devon.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#concept" 
+                   class="inline-flex items-center justify-center px-8 py-4 bg-white text-emerald-900 font-semibold rounded-3xl text-lg hover:bg-emerald-50 transition-all active:scale-[0.985]">
+                    Explore the Vision
+                </a>
+                <a href="#contact" 
+                   class="inline-flex items-center justify-center px-8 py-4 border-2 border-white/70 hover:bg-white/10 font-semibold rounded-3xl text-lg transition-all">
+                    Discuss a Land Partnership
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- The Opportunity -->
+    <section id="opportunity" class="max-w-screen-xl mx-auto px-6 pt-20 pb-16">
+        <div class="max-w-3xl">
+            <div class="uppercase tracking-[3px] text-emerald-700 text-sm font-semibold mb-3">THE OPPORTUNITY</div>
+            <h2 class="section-header mb-6">A better way to use rural land</h2>
+            <p class="text-xl text-slate-600 leading-relaxed">
+                Traditional approaches to large-scale solar and compute infrastructure often create conflict with agricultural land use. 
+                As demand for clean energy and computing power grows, rural land faces increasing pressure.
+            </p>
+            <p class="mt-4 text-xl text-slate-600 leading-relaxed">
+                <strong>AetherForge</strong> is developing a different model — one that <span class="text-emerald-700 font-medium">maximises land productivity</span> 
+                by combining solar generation with continued farming and on-site compute.
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Concept -->
+    <section id="concept" class="bg-white py-16 border-y border-slate-100">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-x-12 items-center">
+                <div class="md:col-span-7">
+                    <div class="uppercase tracking-[3px] text-emerald-700 text-sm font-semibold mb-3">OUR CONCEPT</div>
+                    <h2 class="section-header mb-6">Agrivoltaic Compute</h2>
+                    
+                    <div class="space-y-6 text-lg text-slate-600">
+                        <p>AetherForge Compute is piloting facilities that integrate:</p>
+                        
+                        <ul class="space-y-4 pl-1">
+                            <li class="flex gap-x-4">
+                                <i class="fa-solid fa-solar-panel text-emerald-600 mt-1.5 w-5"></i>
+                                <span><strong>Elevated solar arrays</strong> optimised for dual land use</span>
+                            </li>
+                            <li class="flex gap-x-4">
+                                <i class="fa-solid fa-server text-emerald-600 mt-1.5 w-5"></i>
+                                <span><strong>Modular compute infrastructure</strong> powered directly by on-site solar (behind-the-meter)</span>
+                            </li>
+                            <li class="flex gap-x-4">
+                                <i class="fa-solid fa-sheep text-emerald-600 mt-1.5 w-5"></i>
+                                <span><strong>Continued agricultural activity</strong>, particularly sheep grazing beneath and between the panels</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-5 mt-10 md:mt-0">
+                    <div class="bg-emerald-900 text-white p-8 rounded-3xl">
+                        <div class="text-emerald-300 text-sm tracking-widest mb-3">KEY ADVANTAGE</div>
+                        <div class="text-2xl leading-tight font-medium">
+                            Behind-the-meter power generation + productive farmland on the same land.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Devon & Agrivoltaics -->
+    <section id="why-devon" class="max-w-screen-xl mx-auto px-6 py-20">
+        <div class="max-w-3xl mb-12">
+            <div class="uppercase tracking-[3px] text-emerald-700 text-sm font-semibold mb-3">WHY DEVON?</div>
+            <h2 class="section-header">The right place for this model</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="font-semibold text-xl mb-4">Why Devon?</h3>
+                <ul class="space-y-3 text-slate-600">
+                    <li class="flex gap-3"><span class="text-emerald-600">•</span> Significant areas of suitable rural land with strong agricultural heritage</li>
+                    <li class="flex gap-3"><span class="text-emerald-600">•</span> Practical land stewardship open to well-designed innovation</li>
+                    <li class="flex gap-3"><span class="text-emerald-600">•</span> Opportunity to demonstrate genuinely multifunctional land use</li>
+                    <li class="flex gap-3"><span class="text-emerald-600">•</span> Growing national support for dual-use renewable projects</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold text-xl mb-4">Why Agrivoltaics?</h3>
+                <p class="text-slate-600 mb-4">
+                    Agrivoltaics (dual-use solar) is already proving successful across the UK, especially with sheep grazing. 
+                    It increases overall land efficiency, improves public acceptance, supports biodiversity, and provides farmers with stable additional income.
+                </p>
+                <p class="text-emerald-700 font-medium">We believe this is the future of responsible large-scale solar and compute development.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="bg-white py-16 border-y border-slate-100">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="uppercase tracking-[3px] text-emerald-700 text-sm font-semibold mb-3">BENEFITS</div>
+                <h2 class="section-header">A model that works for everyone</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Benefit 1 -->
+                <div class="benefit-card bg-white border border-slate-200 p-8 rounded-3xl">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-handshake text-emerald-700 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-3">For Landowners</h3>
+                    <ul class="space-y-2.5 text-slate-600">
+                        <li>Long-term, stable income</li>
+                        <li>Continue sheep grazing operations</li>
+                        <li>Diversified revenue streams</li>
+                        <li>Keep land in productive agricultural use</li>
+                    </ul>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="benefit-card bg-white border border-slate-200 p-8 rounded-3xl">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-leaf text-emerald-700 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-3">For the Environment & Region</h3>
+                    <ul class="space-y-2.5 text-slate-600">
+                        <li>Maximised productive land use</li>
+                        <li>Support for biodiversity</li>
+                        <li>Contribution to renewable goals</li>
+                        <li>New economic activity in rural Devon</li>
+                    </ul>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="benefit-card bg-white border border-slate-200 p-8 rounded-3xl">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-server text-emerald-700 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-3">For Compute & Infrastructure</h3>
+                    <ul class="space-y-2.5 text-slate-600">
+                        <li>Direct access to clean on-site power</li>
+                        <li>Resilient, modular design</li>
+                        <li>Lower transmission losses</li>
+                        <li>Potential for decentralised infrastructure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Pilot -->
+    <section id="pilot" class="max-w-screen-xl mx-auto px-6 py-20">
+        <div class="max-w-3xl">
+            <div class="uppercase tracking-[3px] text-emerald-700 text-sm font-semibold mb-3">THE PILOT</div>
+            <h2 class="section-header mb-6">Proving the model at scale</h2>
+            
+            <p class="text-xl text-slate-600 mb-8">
+                We are developing a phased pilot in Devon to demonstrate the full potential of agrivoltaic compute facilities.
+            </p>
+            
+            <div class="grid sm:grid-cols-2 gap-6">
+                <div class="border border-slate-200 rounded-3xl p-7">
+                    <div class="font-semibold mb-3">Phase 1 Focus</div>
+                    <ul class="text-slate-600 space-y-2 text-sm">
+                        <li>• Optimised agrivoltaic layout with sheep grazing</li>
+                        <li>• Behind-the-meter solar powering modular compute</li>
+                        <li>• Resilient connectivity (Starlink integration)</li>
+                        <li>• Real-world performance data collection</li>
+                    </ul>
+                </div>
+                <div class="border border-slate-200 rounded-3xl p-7">
+                    <div class="font-semibold mb-3">Longer-term Vision</div>
+                    <p class="text-slate-600 text-sm">
+                        Scalable, replicable deployments that combine productive farming, clean energy generation, 
+                        and high-performance compute in rural settings across the UK.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="bg-emerald-900 text-white py-16">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="max-w-2xl">
+                <div class="uppercase tracking-[3px] text-emerald-300 text-sm font-semibold mb-3">ABOUT</div>
+                <h2 class="text-4xl font-semibold tracking-tight mb-6">AetherForge Compute Ltd</h2>
+                <p class="text-emerald-100 text-lg">
+                    We were incorporated to explore and deliver practical, high-performance compute infrastructure 
+                    powered by innovative and responsible land use.
+                </p>
+                <p class="mt-4 text-emerald-100 text-lg">
+                    Led by Director <strong>Joshua Karkeek</strong>, we focus on grounded, real-world solutions that combine 
+                    renewable energy, modular technology, and productive rural land.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="max-w-screen-xl mx-auto px-6 py-20">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="section-header mb-4">Ready to explore a partnership?</h2>
+            <p class="text-xl text-slate-600 mb-10">
+                We are actively seeking discussions with landowners in Devon who have suitable acreage 
+                and are open to innovative dual-use projects.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="mailto:joshua@aetherforgecompute.com" 
+                   class="inline-flex items-center justify-center gap-x-3 px-8 py-4 bg-emerald-800 hover:bg-emerald-900 transition-colors text-white font-semibold rounded-3xl text-lg">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email Joshua</span>
+                </a>
+                <a href="tel:07946556429" 
+                   class="inline-flex items-center justify-center gap-x-3 px-8 py-4 border border-emerald-700 text-emerald-700 hover:bg-emerald-50 font-semibold rounded-3xl text-lg transition-colors">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>07946 556429</span>
+                </a>
+            </div>
+            
+            <div class="text-sm text-slate-500">
+                AetherForge Compute Ltd • Ivybridge, Devon<br>
+                joshua@aetherforgecompute.com
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 py-8">
+        <div class="max-w-screen-xl mx-auto px-6 text-center text-sm text-slate-500">
+            © 2026 AetherForge Compute Ltd. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent', '#166534');
+        }
+        
+        // Mobile menu
+        function setupMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            if (!btn) return;
+            
+            btn.addEventListener('click', () => {
+                const nav = document.createElement('div');
+                nav.className = `fixed inset-0 bg-white z-[100] p-6 md:hidden`;
+                nav.innerHTML = `
+                    <div class="flex justify-between items-center mb-8">
+                        <div class="flex items-center gap-x-3">
+                            <div class="w-9 h-9 bg-emerald-800 rounded-xl flex items-center justify-center">
+                                <span class="text-white font-bold text-xl">AF</span>
+                            </div>
+                            <span class="font-semibold text-xl">AetherForge Compute</span>
+                        </div>
+                        <button class="text-3xl text-slate-400">&times;</button>
+                    </div>
+                    <div class="flex flex-col gap-y-6 text-lg font-medium">
+                        <a href="#opportunity" class="py-1">The Opportunity</a>
+                        <a href="#concept" class="py-1">Our Concept</a>
+                        <a href="#why-devon" class="py-1">Why Devon</a>
+                        <a href="#benefits" class="py-1">Benefits</a>
+                        <a href="#pilot" class="py-1">The Pilot</a>
+                        <a href="#contact" class="mt-4 inline-block px-6 py-3 bg-emerald-800 text-white rounded-2xl text-center">Discuss Partnership</a>
+                    </div>
+                `;
+                document.body.appendChild(nav);
+                
+                nav.querySelector('button').addEventListener('click', () => nav.remove());
+                nav.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => nav.remove());
+                });
+            });
+        }
+        
+        // Smooth scroll for anchor links
+        function setupSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        }
+        
+        // Initialize everything
+        function init() {
+            initializeTailwind();
+            setupMobileMenu();
+            setupSmoothScroll();
+            
+            // Optional: Add subtle animation on scroll for benefit cards
+            const cards = document.querySelectorAll('.benefit-card');
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                
+                cards.forEach(card => {
+                    card.style.opacity = '0.95';
+                    observer.observe(card);
+                });
+            }
+        }
+        
+        window.onload = init;
+    </script>
+</body>
+</html>
