@@ -1,0 +1,12 @@
+{
+  "name": "aetherforge-compute",
+  "version": "1.0.0",
+  "description": "AetherForge Compute Ltd - Agrivoltaic Compute Facilities",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static HTML project - no build required'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
